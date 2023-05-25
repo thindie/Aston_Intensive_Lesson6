@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.example.thindie.aston_intensive_lesson5.ContactsListFragment"
+    android:layout_width="match_parent"
+    android:background="@color/material_dynamic_primary90"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ContactsListFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_all_contacts"
+        style="@style/text_field"
+        android:background="@color/material_dynamic_primary95"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_all_contacts_edit"
+            style="@style/text_field"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/design_default_color_on_primary"
+            android:hint="@string/hint" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            style="@style/text_field"
+            android:id="@+id/button_search"
+            android:layout_gravity="end"
+            android:text="@string/clear"/>
+        <Button
+            android:id="@+id/button_clear"
+            style="@style/text_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/clear" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_contact" />
+</LinearLayout>

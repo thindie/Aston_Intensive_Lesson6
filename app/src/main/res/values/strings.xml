@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aston_Intensive_lesson5</string>
+    <string name="textview">TextView</string>
+    <string name="hint_link">change..</string>
+    <string name="save">save</string>
+    <string name="contact_name">"NAME:      "</string>
+    <string name="contact_surname">"SURNAME:      "</string>
+    <string name="contact_phone">"PHONE:      "</string>
+    <string name="search">search</string>
+    <string name="clear">X</string>
+    <string name="reset_editable_text_field"></string>
+    <string name="hint">search by name or surname..</string>
+    <string name="image_descryption">image</string>
+    <integer name="recycler_view_pool">30</integer>
+</resources>
